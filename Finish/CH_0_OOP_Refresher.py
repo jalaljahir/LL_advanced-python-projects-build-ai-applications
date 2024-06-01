@@ -37,12 +37,16 @@ car1 = Car("Toyota", "Camry")
 # Creating the second car (object)
 car2 = Car("Ford", "Mustang")
 
+car3 = Car('Honda', 'Pilot')
+
 # Accessing object attributes
 
 # Encapsulation: Accessing object attributes (make and model) using dot notation.
 # It's like checking the make and model of each car without knowing how they are implemented internally.
 print(f"I have a {car1.make} {car1.model}.")
 print(f"I also own a {car2.make} {car2.model}.")
+
+print(f'I have a {car3.make} {car3.model} for last few years.')
 
 # Calling object methods
 
@@ -53,4 +57,7 @@ print(f"I also own a {car2.make} {car2.model}.")
 # Method Call - start_engine
 car1.start_engine()  # Polymorphism: Car 1 starts its engine.
 car2.start_engine()  # Polymorphism: Car 2 starts its engine.
+
+car3.start_engine()
+
 # This is like instructing each car to engage its engine, and they follow their unique set of instructions.
